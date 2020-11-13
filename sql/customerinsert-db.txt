@@ -1,0 +1,1 @@
+INSERT INTO employee(name, email,gender, phone_number,address,password)Values('VISHNU','vishnu@gmail.com','Male','6791234678','Vancouver','vishnu')
