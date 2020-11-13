@@ -1,0 +1,13 @@
+DROP TABLE reservation IF EXISTS;
+
+CREATE TABLE reservation (
+
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(30),
+email VARCHAR(40),
+phone_number VARCHAR(15),
+time VARCHAR (20),
+resDate Date,
+peopleNumber VARCHAR(25),
+status VARCHAR(20)
+);
