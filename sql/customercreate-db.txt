@@ -1,0 +1,12 @@
+DROP TABLE customer IF EXISTS;
+
+CREATE TABLE customer (
+
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(30),
+email VARCHAR(40),
+gender VARCHAR(10),
+phone_number VARCHAR(15),
+address VARCHAR (50),
+password VARCHAR(25)
+);
