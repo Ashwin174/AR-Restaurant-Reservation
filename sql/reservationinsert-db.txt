@@ -1,0 +1,2 @@
+INSERT INTO reservation(
+name,email,phone_ number,time,resDate,peopleNumber,status) VALUES('JAMES','james@gmail.com','6047297183','12 -am','2020-08-19','5','Reserved');
