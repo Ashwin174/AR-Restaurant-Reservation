@@ -15,6 +15,7 @@ public void setId(int id) {
 	private String phone_number;
 	private String address;;
 	private String Password;
+		
 	public String getName() {
 		return name;
 	}
@@ -52,6 +53,26 @@ public void setId(int id) {
 		Password = password;
 	}
 	
+	
+	
+	
+	public Customer_aas_80(int id, String name, String email, String gender, String phone_number, String address,
+			String password) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.gender = gender;
+		this.phone_number = phone_number;
+		this.address = address;
+		Password = password;
+	}
+	
+	
+	
+	public Customer_aas_80() {
+		
+	}
 	public String Displ()
 	{
 		StringBuffer sb= new StringBuffer();
