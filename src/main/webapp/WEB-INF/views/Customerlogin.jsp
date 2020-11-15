@@ -5,6 +5,9 @@
 
 <link href="<c:url value="/static/css/bootstrap.min.css" />"
 	rel="stylesheet">
+	<link href="<c:url value="/static/css/restaurantReservation.css" />"
+	rel="stylesheet">
+	
 <script src="<c:url value="/static/js/jquery-1.11.1.min.js" />"></script>
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 
@@ -15,7 +18,8 @@
 
 </head>
 <body>
-<h2> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to AR Restaurant</h2>
+<div class ="container">
+<h2> Welcome to AR Restaurant</h2>
 
 
 <h4>Customer Login</h4>
@@ -36,12 +40,13 @@
 			
 		
 			
-			
+			<div class ="inlineElement">
 			<div class="form-group">
 
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Login</form:button>
+					<form:button class="btn btn-secondary">Login</form:button>
 				</div>
+			</div>
 			</div>
 		</form:form>
 		
@@ -51,14 +56,14 @@
 			
 		
 			
-			
+			<div class="inlineElement">
 			<div class="form-group">
-
+        
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Register</form:button>
+					<form:button class="btn btn-secondary">Register</form:button>
 				</div>
 			</div>
-			
+			</div>
 			
 			
 		</form:form>
@@ -67,6 +72,6 @@
 		<c:if test="${ error !=null }">
 			<div class="alert alert-success" role="alert">${error}</div>
 		</c:if>
-
+</div>
 </body>
 </html>
