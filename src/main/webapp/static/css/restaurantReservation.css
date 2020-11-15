@@ -1,0 +1,32 @@
+body {
+	color: gray;
+}
+
+h2 {
+	
+}
+
+.inlineArea {
+	
+}
+
+form {
+	display: inline;
+}
+
+.inlineElement {
+	float: left;
+	width: 40%;
+	padding-right: 5%;
+}
+
+.inlineElement-main {
+	float: left;
+	width: 30%;
+	padding-right: 5%;
+}
+button {
+	width: 180px;
+	color: red;
+	background-color: gray;
+}
