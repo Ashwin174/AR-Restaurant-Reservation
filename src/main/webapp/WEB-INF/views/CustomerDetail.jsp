@@ -22,8 +22,8 @@
 			<div class="alert alert-success" role="alert">${message}</div>
 		</c:if>
 		
-       <form:form action="${pageContext.request.contextPath}/ToEmployeeMain"
-			cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
+       <form:form action="${pageContext.request.contextPath}/gottoCustMainPage"
+			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
 				
 			<div class="form-group">
 
