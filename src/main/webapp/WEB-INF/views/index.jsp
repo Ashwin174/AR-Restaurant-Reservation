@@ -7,14 +7,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Show Students</title>
+<title>Show Enmployee</title>
 <link href="<c:url value="/static/css/bootstrap.min.css" />"
+	rel="stylesheet">
+	<link href="<c:url value="/static/css/restaurantReservation.css" />"
 	rel="stylesheet">
 <script src="<c:url value="/static/js/jquery-1.11.1.min.js" />"></script>
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 </head>
+
 <body>
-<h2> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to AR Restaurant</h2>
+<div class ="container">
+<h2>Welcome to AR Restaurant</h2>
 
 <h2>Employee Login</h2>
 <form:form action="${pageContext.request.contextPath}/empLogin"
@@ -33,6 +37,7 @@
 			</div>
 			
 		
+	   	<div class ="inlineElement">
 			
 			
 			<div class="form-group">
@@ -42,7 +47,7 @@
 				</div>
 			</div>
 			
-			
+			</div>
 			
 		</form:form>
 		<form:form action="${pageContext.request.contextPath}/createEmployee"
@@ -51,6 +56,7 @@
 			
 		
 			
+						<div class ="inlineElement">
 			
 			<div class="form-group">
 
@@ -59,7 +65,7 @@
 				</div>
 			</div>
 			
-			
+			</div>
 			
 		</form:form>
 		
@@ -67,6 +73,6 @@
 		<c:if test="${ error !=null }">
 			<div class="alert alert-success" role="alert">${error}</div>
 		</c:if>
-
+</div>
 </body>
 </html>
