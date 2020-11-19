@@ -10,6 +10,8 @@
 <title>Show Students</title>
 <link href="<c:url value="/static/css/bootstrap.min.css" />"
 	rel="stylesheet">
+	<link href="<c:url value="/static/css/restaurantReservation.css" />"
+	rel="stylesheet">
 <script src="<c:url value="/static/js/jquery-1.11.1.min.js" />"></script>
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 </head>
@@ -28,7 +30,7 @@
 			<div class="form-group">
 
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Return Main Page </form:button>
+					<form:button Class="btn btn-secondary">Return Main Page </form:button>
 				</div>
 			</div>
 					
@@ -94,7 +96,7 @@
 			</div>
 			
 			
-			</div>
+			
 			<div class="form-group">
 				<label for="time" class="col-md-3 controllabel">Time</label>
 				<div class="col-md-9">
@@ -125,7 +127,7 @@
 			<div class="form-group">
 				<!-- Button -->
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Reserve Here</form:button>
+					<form:button Class="btn btn-secondary">Reserve Here</form:button>
 				</div>
 			</div>
 			

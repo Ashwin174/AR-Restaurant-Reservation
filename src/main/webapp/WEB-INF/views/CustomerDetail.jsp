@@ -10,6 +10,8 @@
 <title>Show Students</title>
 <link href="<c:url value="/static/css/bootstrap.min.css" />"
 	rel="stylesheet">
+	<link href="<c:url value="/static/css/restaurantReservation.css" />"
+	rel="stylesheet">
 <script src="<c:url value="/static/js/jquery-1.11.1.min.js" />"></script>
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 </head>
@@ -22,13 +24,13 @@
 			<div class="alert alert-success" role="alert">${message}</div>
 		</c:if>
 		
-       <form:form action="${pageContext.request.contextPath}/gottoCustMainPage"
-			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
+       <form:form action="${pageContext.request.contextPath}/gottoEmpMainPage"
+			cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
 				
 			<div class="form-group">
 
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Return Main Page </form:button>
+					<form:button Class="btn btn-secondary">Return Main Page </form:button>
 				</div>
 			</div>
 					

@@ -22,7 +22,7 @@
 
 
 
-		<form:form action="${pageContext.request.contextPath}/confirmcustedit/"
+		<form:form action="${pageContext.request.contextPath}/confirmcusteditbyemp/"
 			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
 			
 			<div class="form-group">

@@ -35,7 +35,7 @@
 	
 <div class ="inlineElement">
 				<div >
-					<form:button cssClass="btn btnprimary">Edit the Profile</form:button>
+					<form:button Class="btn btn-secondary">Edit the Profile</form:button>
 				</div>
 			</div>
 	
@@ -49,7 +49,7 @@
 		<div class ="inlineElement">
 	
 				<div >
-					<form:button cssClass="btn btnprimary">Reserve Your Seat</form:button>
+					<form:button Class="btn btn-secondary">Reserve Your Seat</form:button>
 				</div>
 		
 	
@@ -64,7 +64,7 @@
 		<div class="form-group">
 
 			<div class="col-md-offset-3 col-md-9">
-				<form:button cssClass="btn btnprimary">Customer List</form:button>
+				<form:button Class="btn btn-secondary">Customer List</form:button>
 			</div>
 		</div>
 </div>
@@ -82,7 +82,7 @@
 		<div class="form-group">
 
 			<div class="col-md-offset-3 col-md-9">
-				<form:button cssClass="btn btnprimary">Logout</form:button>
+				<form:button Class="btn btn-secondary">Logout</form:button>
 			</div>
 		</div>
 

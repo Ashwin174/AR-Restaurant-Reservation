@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 
-		<h1>Student List</h1>
+		<h1>Customer List</h1>
 		<hr />
 		<c:if test="${ message !=null }">
 			<div class="alert alert-success" role="alert">${message}</div>
@@ -28,30 +28,30 @@
 				<td>Email</td>
 				<td>Gender</td>
 				<td>PhoneNumber</td>
-			    <td>Department</td>
+			  
 				<td>Address</td>
 				<td>Password</td>
 			</tr>
-			<c:forEach var="employee" items="${employeeList}">
+			<c:forEach var="customer" items="${customerList}">
 				<tr>
-					<td>${employee.name}</td>
-					<td>${employee.email}</td>
-					<td>${employee.gender}</td>
-					<td>${employee.phone_number}</td>
-					<td>${employee.department}</td>
-			        <td>${employee.address}</td>
-			        <td>${employee.password}</td>
+					<td>${customer.name}</td>
+					<td>${customer.email}</td>
+					<td>${customer.gender}</td>
+					<td>${customer.phone_number}</td>
+					
+			        <td>${customer.address}</td>
+			        <td>${customer.password}</td>
 					<td><A
-						HREF="${pageContext.request.contextPath}/deleteEmployee/?id=${employee.id}">Delete</A></td> 
+						HREF="${pageContext.request.contextPath}/deleteCustomerbyEmp/?id=${customer.id}">Delete</A></td> 
 				<td><A
-						HREF="${pageContext.request.contextPath}/editStudent/?id=${student.id}">Edit</A></td>
+						HREF="${pageContext.request.contextPath}/editCustomerbyEmp/?id=${customer.id}">Edit</A></td>
 				</tr>
 			</c:forEach>
 		</table>
-		<h3>Create Student</h3>
+		<h3>Create Customer</h3>
 
-		<form:form action="${pageContext.request.contextPath}/createEmployee/"
-			cssClass="form-horizontal" method="post" modelAttribute="employee">
+		<form:form action="${pageContext.request.contextPath}/createCustmerbyEmp/"
+			cssClass="form-horizontal" method="post" modelAttribute="customer">
 			
 			<div class="form-group">
 				<label for="name" class="col-md-3 controllabel">Name</label>
@@ -78,12 +78,6 @@
 				</div>
 			</div>
 			
-			<div class="form-group">
-				<label for="department" class="col-md-3 controllabel">Department</label>
-				<div class="col-md-9">
-					<form:input path="department" cssClass="form-control" />
-				</div>
-			</div>
 			<div class="form-group">
 				<label for="address" class="col-md-3 controllabel">Address</label>
 				<div class="col-md-9">

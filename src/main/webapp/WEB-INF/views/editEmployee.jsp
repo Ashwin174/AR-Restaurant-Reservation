@@ -9,6 +9,8 @@
 <title>Show Students</title>
 <link href="<c:url value="/static/css/bootstrap.min.css" />"
 	rel="stylesheet">
+	<link href="<c:url value="/static/css/restaurantReservation.css" />"
+	rel="stylesheet">
 <script src="<c:url value="/static/js/jquery-1.11.1.min.js" />"></script>
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 <%@ page isELIgnored="false"%>
@@ -85,7 +87,7 @@
 			<div class="form-group">
 				<!-- Button -->
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Submit</form:button>
+					<form:button Class="btn btn-secondary">Submit</form:button>
 				</div>
 			</div>
 			

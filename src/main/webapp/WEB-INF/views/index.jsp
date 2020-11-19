@@ -43,7 +43,7 @@
 			<div class="form-group">
 
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Submit</form:button>
+					<form:button Class="btn btn-secondary">Submit</form:button>
 				</div>
 			</div>
 			
@@ -61,7 +61,7 @@
 			<div class="form-group">
 
 				<div class="col-md-offset-3 col-md-9">
-					<form:button cssClass="btn btnprimary">Register</form:button>
+					<form:button Class="btn btn-secondary">Register</form:button>
 				</div>
 			</div>
 			
