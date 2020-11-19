@@ -76,7 +76,7 @@ public class EmployeeController {
 	public String showEmployee(HttpSession session, Model model)	{
 		//Get a list of students from the database
 	   
-	   int id = (int) session.getAttribute("id");
+	   int id = (int) session.getAttribute("sessionempid");
 	   Employee_aas_80 employee = employeeDao.getOneEmployee(id);
 		List<Employee_aas_80> employees = employeeDao.getAllEmployee();
 			
@@ -118,7 +118,7 @@ public class EmployeeController {
 	
 	
 	@GetMapping("/deleteCustomer")
-	public String deleteEmployee(@RequestParam(required = true) int id, Model model)	{
+	public String deleteEmployee(HttpSession session,@RequestParam(required = true) int id, Model model)	{
 				
 		//Get the student
 		customerDao.deleteCustomer(id);
@@ -126,7 +126,9 @@ public class EmployeeController {
 		//Get a list of students from the controller
 		List<Customer_aas_80> customers = customerDao.getAllCustomer();
 		model.addAttribute("customerList", customers);
-	
+		int empId = (int) session.getAttribute("sessionempid");
+ 	   Employee_aas_80 employee =employeeDao.getOneEmployee(empId);
+ 		model.addAttribute("currEmployee",employee);
 		model.addAttribute("message", "Deleted Customer: " + id);
 			
 		return "CustomerDetail";
@@ -151,10 +153,10 @@ public class EmployeeController {
 	  	
 	  		model.addAttribute("message", "Edited Customer: " + custDetails.getEmail());
 	  			
-	  		return "editCustomer";
+	  		return "editCustomerbyEmp";
 	  	}
 	
-	@PostMapping("/confirmcustedit")
+	@PostMapping("/confirmcusteditbyemp")
 	public String confirmcustemp(HttpSession session,@ModelAttribute("currCustomer")Customer_aas_80 updatedcustomer, Model model) {
 	customerDao.updateCustomer(updatedcustomer);
 		
@@ -225,6 +227,7 @@ public class EmployeeController {
    		List<Customer_aas_80> customers = customerDao.getAllCustomer();
   		model.addAttribute("customerList", customers);
   		model.addAttribute("currEmployee", employee);
+  		
    		return("CustomerDetail");
    		
    	}
@@ -245,6 +248,18 @@ public class EmployeeController {
   			return("EmployeeMain");
   		}
   	
+	@PostMapping("/gottoEmpMainPage")
+  	
+	public String goToMainEmpPage(HttpSession session,  Model model) {
+	
+	   		int id = (int) session.getAttribute("sessionempid");
+            Employee_aas_80 employee =employeeDao.getOneEmployee(id);
+   
+	
+	model.addAttribute("currEmployee",employee );
+	model.addAttribute("message", "Welcome: " + employee.getName());
+		return("EmployeeMain");
+	}
 
   
 }

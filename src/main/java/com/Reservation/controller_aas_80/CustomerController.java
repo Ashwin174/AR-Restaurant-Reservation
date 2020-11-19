@@ -196,7 +196,7 @@ public class CustomerController {
   	
   	
   	
- /** 	@PostMapping("/gottoCustMainPage")
+ 	@PostMapping("/gottoCustMainPage")
   	
 		public String goToMainCustPage(HttpSession session,  Model model) {
 		
@@ -205,10 +205,10 @@ public class CustomerController {
 	   
 		
 		model.addAttribute("currCustomer",customer );
-	
+		model.addAttribute("message", "Welcome: " + customer.getName());
 			return("CustomerMain");
 		}
-  	**/
+  	
   	@PostMapping("/logout")
   	public String logout(HttpSession session,@ModelAttribute("login")Customer_aas_80 currCustomer, Model model)	{
   		
