@@ -17,8 +17,9 @@
 <script src="<c:url value="/static/js/bootstrap.min.js" />"></script>
 
 </head>
-<div class ="container">
+
 <body>
+<div class ="container">
 	<h2>AR Restaurant</h2>
 
 	<c:if test="${ message !=null }">
@@ -35,7 +36,7 @@
 	
 <div class ="inlineElement">
 				<div >
-					<form:button Class="btn btn-secondary">Edit the Profile</form:button>
+					<form:button Class="btn btn-secondary">Edit Profile</form:button>
 				</div>
 			</div>
 	
@@ -49,14 +50,14 @@
 		<div class ="inlineElement">
 	
 				<div >
-					<form:button Class="btn btn-secondary">Reserve Your Seat</form:button>
+					<form:button Class="btn btn-secondary">Reserve Seat</form:button>
 				</div>
-		
+		</div>
 	
 		</form:form>
 
 
-</div>
+
 	<form:form action="${pageContext.request.contextPath}/showCustomers"
 		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
 
@@ -67,10 +68,30 @@
 				<form:button Class="btn btn-secondary">Customer List</form:button>
 			</div>
 		</div>
+    </div>
+
+</form:form>
+
+<form:form action="${pageContext.request.contextPath}/headingPaymentEmployee"
+		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
+
+
+	<div class ="inlineElement">
+
+
+		<div class="form-group">
+
+			<div class="col-md-offset-3 col-md-9">
+				<form:button Class="btn btn-secondary">Payment</form:button>
+			</div>
+		</div>
+
+
 </div>
-
-
 	</form:form>
+
+
+	
 
 	<form:form action="${pageContext.request.contextPath}/logout"
 		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
@@ -87,10 +108,10 @@
 		</div>
 
 
-</div>
+     </div>
 	</form:form>
 	
-	</div>
+	
 
 	<c:if test="${ error !=null }">
 		<div class="alert alert-success" role="alert">${error}</div>

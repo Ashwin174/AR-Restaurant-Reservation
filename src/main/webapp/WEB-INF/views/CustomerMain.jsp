@@ -72,6 +72,26 @@
 		</form:form>
 		
 		
+		
+			<form:form action="${pageContext.request.contextPath}/logout"
+			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
+		
+			
+		
+			
+			<div class ="inlineElement">
+			<div class="form-group">
+
+				<div class="col-md-offset-3 col-md-9">
+					<form:button Class="btn btn-secondary">Payment</form:button>
+				</div>
+			</div>
+			</div>
+			
+			
+		</form:form>
+		
+		
 				<form:form action="${pageContext.request.contextPath}/logout"
 			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
 		
