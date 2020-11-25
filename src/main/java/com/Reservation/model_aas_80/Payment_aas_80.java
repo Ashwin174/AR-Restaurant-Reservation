@@ -47,6 +47,7 @@ public class Payment_aas_80 {
 	public void setTotal(double total) {
 		this.total = total;
 	}
+	
 	public String getType() {
 		return type;
 	}
@@ -54,6 +55,13 @@ public class Payment_aas_80 {
 		this.type = type;
 	}
 	
+	public double calculationTotalamount() {
+		
+
+		
+		return this.amount+this.amount * this.taxrate;
+		
+	}
 	
 	
 	

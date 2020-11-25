@@ -56,7 +56,7 @@ public class paymentDao_aas_80 {
 		return  null;
 	}**/
 	
-public boolean updateEmployee(Payment_aas_80 Updatedetail) {
+public boolean updatePayment(Payment_aas_80 Updatedetail) {
 		
 		return jdbcTemplete.update(SQL_UPDATE_PAYMENT,Updatedetail.getCustEmail(),Updatedetail.getDate(),Updatedetail.getAmount(),Updatedetail.getTaxrate(),Updatedetail.getTotal(),Updatedetail.getType(),Updatedetail.getId()) > 0;
 	}
