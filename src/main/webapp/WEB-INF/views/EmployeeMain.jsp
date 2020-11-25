@@ -25,24 +25,35 @@
 	<c:if test="${ message !=null }">
 		<div class="alert alert-success" role="alert">${message}</div>
 	</c:if>
+	     	
+	
 <h4>Welcome &nbsp;${currEmployee.name} </h4>
 <h5>Employee Details</h5>
 	<h5>${currEmployee.Displ()}</h5>
 
-      
-      	
-		<form:form action="${pageContext.request.contextPath}/editEmployee"
-			cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
-	
-<div class ="inlineElement">
-				<div >
-					<form:button Class="btn btn-secondary">Edit Profile</form:button>
-				</div>
-			</div>
-	
-		</form:form>
 
-	
+
+
+<form:form action="${pageContext.request.contextPath}/headingPaymentEmployee"
+		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
+
+
+	<div class ="inlineElement">
+
+
+		<div class="form-group">
+
+			<div class="col-md-offset-3 col-md-9">
+				<form:button Class="btn btn-secondary">Make Payment</form:button>
+			</div>
+		</div>
+
+
+     </div>
+	</form:form>
+
+
+ 
 		<form:form
 			action="${pageContext.request.contextPath}/employeeReservation"
 			cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
@@ -72,28 +83,20 @@
 
 </form:form>
 
-<form:form action="${pageContext.request.contextPath}/headingPaymentEmployee"
-		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
-
-
-	<div class ="inlineElement">
-
-
-		<div class="form-group">
-
-			<div class="col-md-offset-3 col-md-9">
-				<form:button Class="btn btn-secondary">Payment</form:button>
-			</div>
-		</div>
-
-
-</div>
-	</form:form>
-
-
 	
 
-	<form:form action="${pageContext.request.contextPath}/logout"
+	<form:form action="${pageContext.request.contextPath}/editEmployee"
+			cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
+	
+<div class ="inlineElement">
+				<div >
+					<form:button Class="btn btn-secondary">Edit Profile</form:button>
+				</div>
+			</div>
+	
+		</form:form>
+	
+		<form:form action="${pageContext.request.contextPath}/logout"
 		cssClass="form-horizontal" method="post" modelAttribute="currEmployee">
 
 
@@ -103,7 +106,7 @@
 		<div class="form-group">
 
 			<div class="col-md-offset-3 col-md-9">
-				<form:button Class="btn btn-secondary">Logout</form:button>
+				<form:button Class="btn btn-secondary">Log Out</form:button>
 			</div>
 		</div>
 

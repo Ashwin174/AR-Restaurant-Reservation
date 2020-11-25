@@ -69,12 +69,7 @@
 			
 			
 			
-			<div class="form-group">
-				<label for="total" class="col-md-3 controllabel">Total</label>
-				<div class="col-md-9">
-					<form:input path="total" cssClass="form-control" />
-				</div>
-			</div>
+		
 			<div class="form-group">
 				<label for="type" class="col-md-3 controllabel">Type</label>
 			<div class="col-md-9">	

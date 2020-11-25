@@ -73,7 +73,7 @@
 		
 		
 		
-			<form:form action="${pageContext.request.contextPath}/logout"
+			<form:form action="${pageContext.request.contextPath}/showPayments"
 			cssClass="form-horizontal" method="post" modelAttribute="currCustomer">
 		
 			

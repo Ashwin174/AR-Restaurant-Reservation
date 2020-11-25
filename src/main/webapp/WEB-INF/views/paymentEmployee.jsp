@@ -38,15 +38,12 @@
 		</form:form>
 		
 		
-		
+		<h3>Confirmed Reservation List</h3>
 		<table class="table table-striped table-bordered">
-
-
-
 
 			<tr>
 				<td>Name</td>
-				<td>Email</td>
+				<td>Email</td>	
 				<td>PhoneNumber</td>
 			 	<td>Time</td>
 				<td>Reservation Date</td>
@@ -57,9 +54,8 @@
 			</tr>
 			<c:forEach var="reservation" items="${reservationList}">
 				<tr>
-					<td>${reservation.name}</td>
+				  <td>${reservation.name}</td>
 					<td>${reservation.email}</td>
-					
 					<td>${reservation.phone_number}</td>
 					<td>${reservation.time}</td>
 			        <td>${reservation.resDate}</td>
@@ -73,6 +69,68 @@
 			</c:forEach>
 		</table>
 		
+	
+	
+	<h3>List of Payments Waiting for Pay</h3>
+		<table class="table table-striped table-bordered">
+
+			<tr>
+				<td> ID</td>
+				<td>Customer Email</td>	
+				<td>Date</td>
+			 	<td>Amount</td>
+				<td>Tax rate</td>
+				<td>Total</td>
+				<td>Type</td>
+				
+				
+			</tr>
+			<c:forEach var="payment" items="${waitingPaymentList}">
+				<tr>
+				  <td>${payment.id}</td>
+					<td>${payment.custEmail}</td>
+					<td>${payment.date}</td>
+					<td>${payment.amount}</td>
+			        <td>${payment.taxrate}</td>
+			        <td>${payment.total}</td>
+			        <td>${payment.type}</td>
+			     
+			     	
+				 
+				</tr>
+			</c:forEach>
+		</table>
+	
+	
+	<h3>List of Payment Received</h3>
+		<table class="table table-striped table-bordered">
+
+		<tr>
+				<td> ID</td>
+				<td>Customer Email</td>	
+				<td>Date</td>
+			 	<td>Amount</td>
+				<td>Tax rate</td>
+				<td>Total</td>
+				<td>Type</td>
+				
+				
+			</tr>
+			<c:forEach var="payment" items="${receivedList}">
+				<tr>
+				  <td>${payment.id}</td>
+					<td>${payment.custEmail}</td>
+					<td>${payment.date}</td>
+					<td>${payment.amount}</td>
+			        <td>${payment.taxrate}</td>
+			        <td>${payment.total}</td>
+			        <td>${payment.type}</td>
+			     
+			     	
+				 
+				</tr>
+			</c:forEach>
+		</table>
 	
 		
 	
