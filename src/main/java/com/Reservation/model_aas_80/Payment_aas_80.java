@@ -62,6 +62,23 @@ public class Payment_aas_80 {
 		return this.amount+this.amount * this.taxrate;
 		
 	}
+	public Payment_aas_80(int id, String custEmail, Date date, double amount, double taxrate, double total,
+			String type) {
+		
+		this.id = id;
+		this.custEmail = custEmail;
+		this.date = date;
+		this.amount = amount;
+		this.taxrate = taxrate;
+		this.total = total;
+		this.type = type;
+	}
+	
+	
+	
+	public Payment_aas_80() {
+		
+	}
 	
 	
 	
